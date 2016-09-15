@@ -1,0 +1,18 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+mainClassName = "com.omada.csvtostringarray.CSVReaderToStringArray"
+// edit output direction
+def inputFile = "/Users/olivier.goutay/Downloads/top_food_tokens.csv"
+def outputFile = "../app/string.xml"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+run {
+    args inputFile, outputFile
+}
